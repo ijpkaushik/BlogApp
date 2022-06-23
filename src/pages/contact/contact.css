@@ -1,0 +1,88 @@
+.contact {
+	width: 30%;
+	height: fit-content;
+	margin: auto;
+	background-color: #f7f3f3;
+	border-radius: 10px;
+	padding: 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	min-width: 500px;
+}
+
+.contactItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* background-color: aqua; */
+}
+
+.contactTitle {
+	padding: 0.1rem 1rem;
+	margin: 1rem 0rem;
+	width: 80%;
+	border-top: solid 1px #a7a4a4;
+	border-bottom: solid 1px #a7a4a4;
+	text-align: center;
+	font-size: 1rem;
+	color: #222222;
+	font-weight: 600;
+}
+
+.contactLabel {
+	font-size: 0.9rem;
+	padding: 0 0.5rem;
+}
+
+.contactInput {
+	font-size: 1rem;
+    margin-bottom: 1rem;
+	border: none;
+	padding: 0.5rem;
+	width: 90%;
+	font-weight: 400;
+	font-size: 1rem;
+	font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+
+.contactInput::placeholder {
+	color: rgb(189, 185, 185);
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.contactInput:focus {
+	outline-style: none;
+}
+
+.contactSocial {
+	margin-top: 1rem;
+	width: 25vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contactIcon {
+	font-size: 1.5rem;
+	margin-right: 0.7rem;
+	color: #444;
+	cursor: pointer;
+}
+
+.contactSubmit {
+	color: white;
+	background-color: rgb(1, 138, 1);
+	padding: 0.7rem;
+	border: none;
+	border-radius: 10px;
+	font-size: 0.8rem;
+	cursor: pointer;
+	align-items: center;
+    /* margin: 1rem 0; */
+}
+
+.success {
+	color: green;
+}

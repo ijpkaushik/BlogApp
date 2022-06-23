@@ -1,0 +1,62 @@
+.about {
+	width: 40%;
+	height: fit-content;
+	margin: auto;
+	background-color: #fdfbfb;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	min-width: 500px;
+}
+
+.aboutItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.aboutTitle {
+	margin: 1rem;
+	padding: 0.3rem;
+	width: 80%;
+	border-top: solid 1px #a7a4a4;
+	border-bottom: solid 1px #a7a4a4;
+	text-align: center;
+	font-family: "Varela Round", sans-serif;
+	font-size: 0.8rem;
+	color: #222222;
+	font-weight: 600;
+}
+
+.aboutItem > img {
+	width: 40%;
+	height: auto;
+}
+
+.aboutItem > p {
+	padding: 2rem;
+	text-align: justify;
+}
+
+.aboutSocial {
+	margin-top: 1rem;
+	width: 25vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.aboutIcon {
+	font-size: 1.5rem;
+	margin-right: 0.7rem;
+	color: #444;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	.about {
+		width: 100%;
+	}
+}

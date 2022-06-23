@@ -1,0 +1,158 @@
+@font-face {
+	font-family: Agustina-Signature;
+	src: url("Agustina-Signature.otf");
+}
+
+.signature {
+	font-size: 1.5rem;
+	color: #444;
+	font-family: Agustina-Signature;
+}
+
+.top {
+	width: 100%;
+	height: 10vh;
+	position: relative;
+	top: 0;
+	display: flex;
+	align-items: center;
+	z-index: 999;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.topLeft {
+	flex: 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.topRight {
+	flex: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.topIcon {
+	font-size: 1.1rem;
+	margin-right: 10px;
+	color: #444;
+	cursor: pointer;
+}
+
+.smallDevice {
+	display: none;
+}
+
+.topCenter {
+	flex: 6;
+	margin: 0 1rem;
+}
+
+.largeDevice {
+	flex: 6;
+	margin: 0 1rem;
+}
+
+.topList {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.topListItem {
+	margin-right: 1.1rem;
+	font-size: 1.2rem;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.topListRight {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.topListItemRight {
+	margin-right: 1.1rem;
+	font-size: 1.2rem;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.topListItem:hover {
+	color: gray;
+}
+
+.topImg {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.toogleButton {
+	position: absolute;
+	top: 0.75rem;
+	left: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.icons {
+	font-size: 2.5rem;
+	color: #444;
+}
+
+@media only screen and (max-width: 992px) {
+	.topLeft {
+		display: none;
+	}
+	.topCenter {
+		width: 80vw;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.smallDevice {
+		display: flex;
+	}
+	.largeDevice {
+		display: none;
+	}
+	.topCenter {
+		flex-direction: column;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		margin: 0;
+	}
+	.toogleButton {
+		display: flex;
+	}
+	.topList {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		backdrop-filter: blur(0.3rem);
+		justify-content: flex-start;
+		padding: 3rem 0;
+	}
+	.topListItem {
+		width: 30%;
+		padding: 1rem 1.5rem;
+		font-size: 1.5rem;
+		color: black;
+	}
+	.topRight {
+		justify-content: end;
+	}
+}

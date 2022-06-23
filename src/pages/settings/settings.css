@@ -1,0 +1,106 @@
+.settings {
+	display: flex;
+}
+
+.settingsWrapper {
+	flex: 9;
+	padding: 1.5rem;
+}
+
+.settingsTitle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.settingsTitleUpdate {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	color: lightcoral;
+}
+
+.settingsTitleDelete {
+	color: red;
+	font-size: 0.7rem;
+	cursor: pointer;
+}
+
+.settingsForm {
+	display: flex;
+	flex-direction: column;
+}
+
+.settingsPP {
+	display: flex;
+	align-items: center;
+	margin: 1rem 0;
+}
+
+.settingsPP > img {
+	height: 70px;
+	width: 70px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.settingsPPIcon {
+	width: 25px;
+	height: 25px;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 50%;
+	margin-left: 10px;
+	color: white;
+	background-color: lightcoral;
+	cursor: pointer;
+}
+
+.settingsPPButton:focus {
+	outline-style: none;
+}
+
+.settingsForm > label {
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+.settingsPPInput {
+	width: 30%;
+}
+
+.settingsForm > input {
+	color: gray;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	height: 1.5rem;
+	border: none;
+	border-bottom: 1px solid lightgray;
+}
+
+.buttonContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.settingsSubmitButton {
+	align-self: center;
+	min-width: 150px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	background-color: teal;
+	padding: 0.8rem 1rem;
+	margin-top: 1rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.settingsSubmitButton:hover {
+	background-color: rgb(1, 114, 114);
+}
